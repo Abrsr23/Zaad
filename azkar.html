@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأذكار - زاد المسلم</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px #ddd;
+            text-align: center;
+        }
+
+        .zekr {
+            font-size: 21px;
+            line-height: 2;
+            color: #216b45;
+        }
+
+        button {
+            background: #216b45;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            margin: 5px;
+            font-size: 17px;
+        }
+
+        #count {
+            font-size: 35px;
+            color: #216b45;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌙 زاد المسلم</h1>
+    <p>الأذكار اليومية</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>أذكار الصباح</h2>
+        <p class="zekr">
+            أصبحنا وأصبح الملك لله،
+            والحمد لله، لا إله إلا الله
+            وحده لا شريك له.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>أذكار المساء</h2>
+        <p class="zekr">
+            أمسينا وأمسى الملك لله،
+            والحمد لله، لا إله إلا الله
+            وحده لا شريك له.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>عداد التسبيح الإلكتروني</h2>
+
+        <p class="zekr">سبحان الله</p>
+
+        <p id="count">0</p>
+
+        <button onclick="increase()">
+            تسبيح
+        </button>
+
+        <button onclick="resetCount()">
+            تصفير العداد
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>ذكر عظيم</h2>
+        <p class="zekr">
+            سبحان الله وبحمده،
+            سبحان الله العظيم.
+        </p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="index.html">العودة إلى الرئيسية</a>
+    </p>
+
+</div>
+
+<footer>
+    جميع الحقوق محفوظة © 2026 زاد المسلم
+</footer>
+
+<script>
+    let counter = 0;
+
+    function increase() {
+        counter++;
+        document.getElementById("count").innerText = counter;
+    }
+
+    function resetCount() {
+        counter = 0;
+        document.getElementById("count").innerText = counter;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <title>زاد المسلم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌙 زاد المسلم</h1>
+    <p>رفيقك اليومي للذكر والطاعة</p>
+</header>
+
+
+<nav>
+  <a href="login.html">تسجيل الدخول</a>
+    <a href="register.html">إنشاء حساب</a>
+
+    <a href="index.html">الرئيسية</a>
+
+    <a href="about.html">من نحن</a>
+  
+  <a href="azkar.html">الأذكار والتسبيح</a>
+  
+    <a href="quran.html">القرآن الكريم</a>
+  
+    <a href="contact.html">تواصل معنا</a>
+  
+</nav>
+
+
+<main>
+
+    <section>
+        <h2>أهلاً بك في زاد المسلم</h2>
+      
+<div style="
+    background:#e8f3eb;
+    padding:25px;
+    margin:20px;
+    border-radius:15px;
+    text-align:center;
+">
+
+    <h2 style="color:#216b45;">
+        🌿 آية اليوم
+    </h2>
+
+    <p style="
+        font-size:24px;
+        color:#216b45;
+        line-height:2;
+    ">
+        ﴿أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ﴾
+    </p>
+
+    <p>سورة الرعد - الآية 28</p>
+
+    <hr>
+
+    <h3>💚 تذكير إيماني</h3>
+
+    <p>
+        لا تنسَ ذكر الله، واجعل لسانك رطباً بذكره.
+    </p>
+
+<div>
+      
+<div style="
+    background:#fff;
+    padding:25px;
+    margin:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 3px 10px #ddd;
+">
+
+    <h2 style="color:#216b45;">🤲 دعاء اليوم</h2>
+
+    <p style="font-size:21px;line-height:2;">
+        اللهم أعني على ذكرك وشكرك وحسن عبادتك.
+    </p>
+
+  <p style="color:#216b45;">اللهم اجعل يومنا مليئًا بالخير والبركة.</p>
+
+
+    <h2 style="color:#216b45;">🌿 أذكار المسلم</h2>
+
+    <p>سبحان الله وبحمده</p>
+    <p>الحمد لله</p>
+    <p>لا إله إلا الله</p>
+    <p>الله أكبر</p>
+    <p>أستغفر الله العظيم</p>
+  
+<section style="background:#fff; padding:20px; margin:20px; border-radius:15px; text-align:center;">
+
+<h2>🌸 أذكار الصباح والمساء</h2>
+  
+<div id="azkar-content" style="margin-top:20px; padding:15px; background:#f5f5f5; border-radius:10px;">
+اضغطي على أحد الأزرار لعرض الأذكار 🌸
+</div>
+
+<script>
+function showAzkar(type) {
+let content = document.getElementById("azkar-content");
+
+if(type === "morning") {
+content.innerHTML = "أصبحنا وأصبح الملك لله، والحمد لله 🌸";
+} else {
+content.innerHTML = "أمسينا وأمسى الملك لله، والحمد لله 🌙";
+}
+}
+</script>
+
+<button onclick="showAzkar('morning')">أذكار الصباح</button>
+<button onclick="showAzkar('evening')">أذكار المساء</button>
+
+  
+
+
+<p>🌸 آية الكرسي</p>
+<p>الله لا إله إلا هو الحي القيوم لا تأخذه سنة ولا نوم...</p>
+
+<p>🌸 سورة الإخلاص (3 مرات)</p>
+<p>قل هو الله أحد، الله الصمد، لم يلد ولم يولد، ولم يكن له كفواً أحد.</p>
+
+<p>🌸 سورة الفلق (3 مرات)</p>
+<p>قل أعوذ برب الفلق، من شر ما خلق...</p>
+
+<p>🌸 سورة الناس (3 مرات)</p>
+<p>قل أعوذ برب الناس، ملك الناس، إله الناس...</p>
+
+
+
+
+
+
+
+
+<h3>أذكار الصباح</h3>
+<p>أصبحنا وأصبح الملك لله، والحمد لله.</p>
+<p>سبحان الله وبحمده (100 مرة)</p>
+
+<h3>أذكار المساء</h3>
+<p>أمسينا وأمسى الملك لله، والحمد لله.</p>
+<p>أستغفر الله العظيم وأتوب إليه.</p>
+
+</section>
+
+  
+
+     <div style="background:#e8f3eb; padding:20px; border-radius:15px; text-align:center;">
+
+
+       
+
+<h2 style="color:#216b45;">📿 عداد التسبيح الإلكتروني</h2>
+
+<div style="margin:15px;">
+<p>سبحان الله</p>
+<h2 id="count1">0</h2>
+<button onclick="increase('count1')">تسبيح</button>
+</div>
+
+<div style="margin:15px;">
+<p>الحمد لله</p>
+<h2 id="count2">0</h2>
+<button onclick="increase('count2')">تسبيح</button>
+</div>
+
+<div style="margin:15px;">
+<p>الله أكبر</p>
+<h2 id="count3">0</h2>
+<button onclick="increase('count3')">تسبيح</button>
+</div>
+
+<button onclick="resetAll()" style="background:#b33;color:white;padding:10px;">
+إعادة تصفير العدادات
+</button>
+
+<script>
+let counts = {
+    count1: 0,
+    count2: 0,
+    count3: 0
+};
+
+function increase(id) {
+    counts[id]++;
+    document.getElementById(id).innerText = counts[id];
+}
+
+function resetAll() {
+    counts.count1 = 0;
+    counts.count2 = 0;
+    counts.count3 = 0;
+
+    document.getElementById("count1").innerText = 0;
+    document.getElementById("count2").innerText = 0;
+    document.getElementById("count3").innerText = 0;
+}
+</script>
+
+      
+
+        <p>فَإِنَّ الذِّكْرَى تَنْفَعُ الْمُؤْمِنِينَ</p>
+        <p>اجعل يومك عامراً بذكر الله.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>جميع الحقوق محفوظة © زاد المسلم 2026</p>
+</footer>
+
+<script src="script.js"></scrip>
+  <script>
+function increase(id) {
+    let count = document.getElementById(id);
+    count.innerHTML = Number(count.innerHTML) + 1;
+}
+</scrip>
+
+</body>
+</html>
