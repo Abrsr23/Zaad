@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <link rel="stylesheet" href="Style.Css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زاد المسلم</title>
+    <!-- إضافة خط تجوال العربي -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- رأس الموقع -->
+    <header>
+        <h1>🌙 زاد المسلم</h1>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#quran">القرآن الكريم</a>
+            <a href="#adhkar">الأذكار</a>
+            <a href="#dua">الأدعية</a>
+            <a href="#tasbeeh">التسبيح</a>
+            <a href="#hadith">الأحاديث</a>
+        </nav>
+    </header>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="hero">
+        <h2>مرحباً بك في زاد المسلم</h2>
+        <p>موقعك اليومي للذكر والقرآن والدعاء</p>
+
+        <div class="ayah">
+            <h3>آية اليوم</h3>
+            <p>﴿ وَذَكِّرْ فَإِنَّ الذِّكْرَىٰ تَنْفَعُ الْمُؤْمِنِينَ ﴾</p>
+            <span>سورة الذاريات - الآية 55</span>
+        </div>
+
+        <h3>ابدأ يومك بذكر الله ❤️</h3>
+    </section>
+
+    <!-- القرآن الكريم -->
+    <section id="quran" class="card">
+        <h2>📖 القرآن الكريم</h2>
+        <p>اقرأ القرآن الكريم واجعل له ورداً يومياً.</p>
+        <p>بسم الله الرحمن الرحيم</p>
+        <p>﴿ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ﴾</p>
+    </section>
+
+    <!-- الأذكار -->
+    <section id="adhkar" class="card">
+        <h2>🌿 الأذكار</h2>
+        <h3>أذكار الصباح</h3>
+        <p>سبحان الله وبحمده، سبحان الله العظيم.</p>
+        <h3>أذكار المساء</h3>
+        <p>أستغفر الله وأتوب إليه.</p>
+    </section>
+
+    <!-- الأدعية -->
+    <section id="dua" class="card">
+        <h2>🤲 الأدعية</h2>
+        <p>ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة وقنا عذاب النار.</p>
+        <p>رب اشرح لي صدري ويسر لي أمري.</p>
+    </section>
+
+    <!-- التسبيح -->
+    <section id="tasbeeh" class="card">
+        <h2>📿 المسبحة الإلكترونية</h2>
+        <p id="count">0</p>
+        <button onclick="increase()">سبحان الله</button>
+        <button onclick="reset()">تصفير العداد</button>
+    </section>
+
+    <!-- الأحاديث -->
+    <section id="hadith" class="card">
+        <h2>✨ حديث نبوي</h2>
+        <p>إنما الأعمال بالنيات.</p>
+        <span>متفق عليه</span>
+    </section>
+
+<section class="azkar">
+  <h2>📿 أذكار المسلم</h2>
+
+<div class="adhkar-list">
+
+    <div class="dhikr">
+        <h3>أذكار الصباح 🌞</h3>
+        <p>أصبحنا وأصبح الملك لله والحمد لله.</p>
+    </div>
+
+    <div class="dhikr">
+        <h3>أذكار المساء 🌙</h3>
+        <p>أمسينا وأمسى الملك لله والحمد لله.</p>
+    </div>
+
+    <div class="dhikr">
+        <h3>ذكر الاستغفار</h3>
+        <p>أستغفر الله وأتوب إليه.</p>
+    </div>
+
+    <div class="dhikr">
+        <h3>ذكر التسبيح</h3>
+        <p>سبحان الله وبحمده.</p>
+    </div>
+
+</div>
+
+    <h2>🤲 عداد التسبيح الإلكتروني</h2>
+<div class="tasbeeh">
+
+    <h3>سبحان الله</h3>
+    <p id="subhan-count">0</p>
+    <button onclick="increase('subhan-count')">سبّحي</button>
+
+    <h3>الحمد لله</h3>
+    <p id="hamd-count">0</p>
+    <button onclick="increase('hamd-count')">سبّحي</button>
+
+    <h3>الله أكبر</h3>
+    <p id="akbar-count">0</p>
+    <button onclick="increase('akbar-count')">سبّحي</button>
+
+</div>
+
+</section>
+  <section id="adhkar">
+    <h2>الأذكار اليومية 🌿</h2><button onclick="showMorning()">أذكار الصباح</button>
+<button onclick="showEvening()">أذكار المساء</button>
+
+<div id="adhkar-content">
+  
+    <h3>أذكار الصباح</h3>
+
+    <p>أصبحنا وأصبح الملك لله، والحمد لله.</p>
+
+    <p>اللهم بك أصبحنا وبك أمسينا وبك نحيا وبك نموت وإليك النشور.</p>
+
+    <p>رضيت بالله رباً وبالإسلام ديناً وبمحمد ﷺ نبياً.</p>
+</div>
+
+</section><script>
+function showMorning() {
+    document.getElementById("adhkar-content").innerHTML = `
+        <h3>أذكار الصباح 🌞</h3>
+        <p>أصبحنا وأصبح الملك لله، والحمد لله.</p>
+        <p>اللهم بك أصبحنا وبك أمسينا وبك نحيا وبك نموت وإليك النشور.</p>
+        <p>رضيت بالله رباً وبالإسلام ديناً وبمحمد ﷺ نبياً.</p>
+    `;
+}
+
+function showEvening() {
+    document.getElementById("adhkar-content").innerHTML = `
+        <h3>أذكار المساء 🌙</h3>
+        <p>أمسينا وأمسى الملك لله، والحمد لله.</p>
+        <p>اللهم بك أمسينا وبك أصبحنا وبك نحيا وبك نموت وإليك المصير.</p>
+        <p>رضيت بالله رباً وبالإسلام ديناً وبمحمد ﷺ نبياً.</p>
+    `;
+}
+  const adhkar = [
+    "أمسينا وأمسى الملك لله",
+    "سبحان الله وبحمده",
+    "أستغفر الله العظيم وأتوب إليه",
+    "لا إله إلا الله وحده لا شريك له",
+    "اللهم صل وسلم على نبينا محمد",
+    "سبحان الله والحمد لله ولا إله إلا الله والله أكبر"
+];
+
+let dhikrIndex = 0;
+
+function nextDhikr() {
+    dhikrIndex++;
+
+    if (dhikrIndex >= adhkar.length) {
+        dhikrIndex = 0;
+    }
+
+    document.getElementById("dhikrText").textContent = adhkar[dhikrIndex];
+}
+</script>
+</>
+    <!-- نهاية الموقع -->
+    <footer>
+        <p>زاد المسلم - طريقك إلى الخير 🌙</p>
+        <p>جميع الحقوق محفوظة 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
